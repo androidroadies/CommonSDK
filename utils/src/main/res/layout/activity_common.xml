@@ -1,0 +1,106 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/linkedin"
+            android:text="LinkedIn Login  " />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="LinkedIn Logout"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/linkedin"
+            android:visibility="gone" />
+
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/facebook"
+            android:padding="10dp"
+            android:text="Facebook Login" />
+
+        <TextView
+            android:id="@+id/text4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/facebook"
+            android:text="Facebook Logout"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/twitter"
+            android:text="Twitter Login    " />
+
+        <TextView
+            android:id="@+id/text6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/twitter"
+            android:text="Twitter Logout"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/text7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/googleplus"
+            android:text="Google + Login" />
+
+
+        <TextView
+            android:id="@+id/text8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:drawablePadding="20dp"
+            android:drawableLeft="@drawable/googleplus"
+            android:text="Google + Logout"
+            android:visibility="gone" />
+
+    </LinearLayout>
+</ScrollView>
