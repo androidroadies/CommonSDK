@@ -20,6 +20,7 @@ import com.common.example.BackGroundMusicStartStopAct;
 import com.common.example.BluetoothOrWifiOnOffAct;
 import com.common.example.BlurEffectActivity;
 import com.common.example.CreateFolderActivity;
+import com.common.example.DateDifferenceActivity;
 import com.common.example.DateFormateAct;
 import com.common.example.DownloadImageFromUrlAct;
 import com.common.example.DrawableToBitmapActivity;
@@ -40,8 +41,6 @@ import com.common.example.SetPrefAct;
 import com.common.example.UrlValidationRippleActivity;
 import com.common.example.ValidationAct;
 import com.common.example.VerticalTextViewsActivity;
-
-import java.util.Date;
 
 public class MainActivity extends Activity {
 
@@ -105,10 +104,6 @@ public class MainActivity extends Activity {
                 "Url Validation & Ripple Effect",/* 43 */
                 "Contacts with EmailId & ScreenShot",/* 44 */
                 "Social Integration"/* 45 */
-//                49
-
-
-//                "FaceBookLogin"/*  */
         };
 
         sdkFunctionalityList = (ListView) findViewById(R.id.Md_list_company);
@@ -211,8 +206,8 @@ public class MainActivity extends Activity {
                 tvText.setText("Total " + Common.getFileCounts("jpg", Environment.getExternalStorageDirectory().getPath()) + " JPG file's");
                 break;
             case 21:
-                intent = new Intent();
-                tvText.setText("Difference is " + Common.calculateDays(new Date("1/12/2014"), new Date("1/12/2015")));
+                intent = new Intent(mContext, DateDifferenceActivity.class);
+//                tvText.setText("Difference is " + Common.calculateDays(new Date("1/12/2014"), new Date("1/12/2015")));
                 break;
             case 22:
                 tvText.setText("Date in milliseconds : " + Common.stringToDate("01/12/2014", "dd/MM/yyyy").getTime());
