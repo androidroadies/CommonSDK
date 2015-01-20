@@ -1,13 +1,13 @@
 package com.common.example;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.widget.ImageView;
 
 import com.common.utils.Common;
 import com.common.utils.R;
 
-public class BlurEffectActivity extends ActionBarActivity {
+public class BlurEffectActivity extends Activity {
 
     private ImageView ivBlur;
 

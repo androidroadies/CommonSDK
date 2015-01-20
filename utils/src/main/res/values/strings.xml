@@ -17,5 +17,10 @@
     <string name="title_activity_address_on_map">AddressOnMapActivity</string>
     <string name="title_activity_create_folder">CreateFolderActivity</string>
     <string name="title_activity_date_difference">DateDifferenceActivity</string>
+    <string name="title_activity_string_to_date">StringToDateActivity</string>
+    <string name="title_activity_toast">ToastActivity</string>
+    <string name="title_activity_choose_profile">ChooseProfileActivity</string>
+    <string name="title_activity_volume">VolumeActivity</string>
+    <string name="title_activity_file_count">FileCountActivity</string>
 
 </resources>

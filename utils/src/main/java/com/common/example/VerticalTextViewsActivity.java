@@ -1,11 +1,11 @@
 package com.common.example;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 
 import com.common.utils.R;
 
-public class VerticalTextViewsActivity extends ActionBarActivity {
+public class VerticalTextViewsActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

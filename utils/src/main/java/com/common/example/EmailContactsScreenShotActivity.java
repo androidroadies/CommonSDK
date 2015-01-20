@@ -1,9 +1,9 @@
 package com.common.example;
 
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
 import android.view.View;
 import android.widget.TextView;
 
@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class EmailContactsScreenShotActivity extends ActionBarActivity {
+public class EmailContactsScreenShotActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

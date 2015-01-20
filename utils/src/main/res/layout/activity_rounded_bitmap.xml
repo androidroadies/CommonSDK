@@ -13,20 +13,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Normal Bitmap"
-        android:textSize="22sp" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:layout_margin="20dp"
         android:layout_gravity="center_horizontal"
+        android:layout_margin="20dp"
         android:src="@drawable/abc" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Normal Bitmap"
-        android:textSize="22sp" />
+        android:text="Rounded Bitmap"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <ImageView
         android:id="@+id/rounded_bitmap_iv_image"

@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.common.utils"
     android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionName="1.0">
 
     <uses-sdk
         android:minSdkVersion="10"
@@ -33,11 +33,11 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:screenOrientation="portrait" >
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,7 +48,7 @@
         <service
             android:name=".BackgroundMusicService"
             android:enabled="true"
-            android:process=":remote" >
+            android:process=":remote">
             <intent-filter>
                 <action android:name=".BackgroundMusicService" />
             </intent-filter>
@@ -152,12 +152,25 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.common.example.CreateFolderActivity"
-            android:label="@string/title_activity_create_folder" >
-        </activity>
+            android:label="@string/title_activity_create_folder" />
         <activity
             android:name="com.common.example.DateDifferenceActivity"
-            android:label="@string/title_activity_date_difference" >
-        </activity>
+            android:label="@string/title_activity_date_difference" />
+        <activity
+            android:name="com.common.example.StringToDateActivity"
+            android:label="@string/title_activity_string_to_date" />
+        <activity
+            android:name="com.common.example.ToastActivity"
+            android:label="@string/title_activity_toast" />
+        <activity
+            android:name="com.common.example.ChooseProfileActivity"
+            android:label="@string/title_activity_choose_profile" />
+        <activity
+            android:name="com.common.example.VolumeActivity"
+            android:label="@string/title_activity_volume" />
+        <activity
+            android:name="com.common.example.FileCountActivity"
+            android:label="@string/title_activity_file_count"></activity>
     </application>
 
 </manifest>

@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Environment;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
@@ -19,12 +18,14 @@ import com.common.example.ArraylistToStringActivity;
 import com.common.example.BackGroundMusicStartStopAct;
 import com.common.example.BluetoothOrWifiOnOffAct;
 import com.common.example.BlurEffectActivity;
+import com.common.example.ChooseProfileActivity;
 import com.common.example.CreateFolderActivity;
 import com.common.example.DateDifferenceActivity;
 import com.common.example.DateFormateAct;
 import com.common.example.DownloadImageFromUrlAct;
 import com.common.example.DrawableToBitmapActivity;
 import com.common.example.EmailContactsScreenShotActivity;
+import com.common.example.FileCountActivity;
 import com.common.example.GetCurrentLocationAct;
 import com.common.example.GetPrefAct;
 import com.common.example.GetRandomNumberAct;
@@ -35,12 +36,16 @@ import com.common.example.PinchZoomImageViewAct;
 import com.common.example.PostFixForNumberAct;
 import com.common.example.PreventClickActivity;
 import com.common.example.RoundedBitmapActivity;
+import com.common.example.SaveImageInPreference;
 import com.common.example.ScreenModeDis_Ean_Act;
 import com.common.example.SendLocatoNotificationAct;
 import com.common.example.SetPrefAct;
+import com.common.example.StringToDateActivity;
+import com.common.example.ToastActivity;
 import com.common.example.UrlValidationRippleActivity;
 import com.common.example.ValidationAct;
 import com.common.example.VerticalTextViewsActivity;
+import com.common.example.VolumeActivity;
 
 public class MainActivity extends Activity {
 
@@ -68,7 +73,7 @@ public class MainActivity extends Activity {
                 "PinchZoom Image",/* 7 */
                 "Get Application Icon",/* 8 */
                 "Send Notification",/* 9 */
-                "Get Random Character",/* 10 */
+                "Get Random Character from A to Z",/* 10 */
                 "Screen Sleep mode on off",/* 11 */
                 "Open image from path",/* 12 */
                 "Open video from path",/* 13 */
@@ -203,14 +208,16 @@ public class MainActivity extends Activity {
                 Common.showTimePickerDialog(mContext, tvText);
                 break;
             case 20:
-                tvText.setText("Total " + Common.getFileCounts("jpg", Environment.getExternalStorageDirectory().getPath()) + " JPG file's");
+                intent = new Intent(mContext, FileCountActivity.class);
+//                tvText.setText("Total " + Common.getFileCounts("jpg", Environment.getExternalStorageDirectory().getPath()) + " JPG file's");
                 break;
             case 21:
                 intent = new Intent(mContext, DateDifferenceActivity.class);
 //                tvText.setText("Difference is " + Common.calculateDays(new Date("1/12/2014"), new Date("1/12/2015")));
                 break;
             case 22:
-                tvText.setText("Date in milliseconds : " + Common.stringToDate("01/12/2014", "dd/MM/yyyy").getTime());
+                intent = new Intent(mContext, StringToDateActivity.class);
+//                tvText.setText("Date in milliseconds : " + Common.stringToDate("01/12/2014", "dd/MM/yyyy").getTime());
                 break;
             case 23:
                 Common.showAlertDialog(this, getString(R.string.app_name), "Your Device height is:" + Common.getDeviceHeight(mContext), false);
@@ -237,10 +244,11 @@ public class MainActivity extends Activity {
                 intent = new Intent(mContext, DrawableToBitmapActivity.class);
                 break;
             case 31:
-                Common.showAlertDialog(mContext, getString(R.string.app_name), "In Development", false);
+                intent = new Intent(mContext, VolumeActivity.class);
+//                Common.showAlertDialog(mContext, getString(R.string.app_name), "In Development", false);
                 break;
             case 32:
-                intent = new Intent(mContext, DrawableToBitmapActivity.class);
+                intent = new Intent(mContext, SaveImageInPreference.class);
                 break;
             case 33:
                 Common.showAlertDialog(this, getString(R.string.app_name), "Your App version is:" + Common.getAppVersionCode(mContext), false);
@@ -249,19 +257,24 @@ public class MainActivity extends Activity {
                 intent = new Intent(mContext, VerticalTextViewsActivity.class);
                 break;
             case 35:
-                Common.showAlertDialog(this, getString(R.string.app_name), "Is SDCard Available ? " + Common.isSDCardAvailable(mContext), false);
+                if (Common.isSDCardAvailable(mContext))
+                    Common.showAlertDialog(this, getString(R.string.app_name), "SDCard Is Available ", false);
+                else
+                    Common.showAlertDialog(this, getString(R.string.app_name), "SDCard Is Not Available ", false);
                 break;
             case 36:
                 Common.openShareDialog(mContext, "Share Title", "", "Share Text", "Share Subject");
                 break;
             case 37:
-                Common.chooseProfile(mContext, 0); // 0= Silent , 1= Vibrate , 2 = Normal
+                intent = new Intent(mContext, ChooseProfileActivity.class);
+//                Common.chooseProfile(mContext, 0); // 0= Silent , 1= Vibrate , 2 = Normal
                 break;
             case 38:
                 intent = new Intent(mContext, RoundedBitmapActivity.class);
                 break;
             case 39:
-                Common.showAlertDialog(mContext, "", "Test Toast", true);
+                intent = new Intent(mContext, ToastActivity.class);
+//                Common.showAlertDialog(mContext, "", "Test Toast", true);
                 break;
             case 40:
                 intent = new Intent(mContext, PreventClickActivity.class);

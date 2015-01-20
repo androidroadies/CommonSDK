@@ -748,11 +748,13 @@ public class Common {
                                     String directoryPath) {
         int Sdcardcount = 0;
         File fileCount = new File(directoryPath);
-        File[] list = fileCount.listFiles();
-        for (File f : list) {
-            String name = f.getName();
-            if (name.endsWith(format))
-                Sdcardcount++;
+        if (fileCount.exists()) {
+            File[] list = fileCount.listFiles();
+            for (File f : list) {
+                String name = f.getName();
+                if (name.endsWith(format))
+                    Sdcardcount++;
+            }
         }
         return Sdcardcount;
     }
@@ -765,7 +767,7 @@ public class Common {
      * @return date difference in long
      */
     public static long calculateDays(Date mDate1, Date mDate2) {
-        return ((mDate1.getTime() - mDate2.getTime()) / (24 * 60 * 60 * 1000)) + 1;
+        return Math.abs((mDate1.getTime() - mDate2.getTime()) / (24 * 60 * 60 * 1000) + 1);
     }
 
     // tvLeft = (com.multidots.thirdeye.VerticalTextViewLeft)
@@ -1810,6 +1812,13 @@ public class Common {
         return isGPSEnabled;
     }
 
+    public static char getRandomCharacter() {
+        Random r = new Random();
+        char c = (char) (r.nextInt(26) + 'a');
+
+        return c;
+    }
+
     // -------------------------------------
     private String getRealPathFromURI(Uri targetUri, Context mContext) {
         // TODO Auto-generated method stub
@@ -1863,14 +1872,6 @@ public class Common {
                 });
         alert = alertDialogBuilder.create();
         alert.show();
-    }
-
-
-    public static char getRandomCharacter() {
-        Random r = new Random();
-        char c = (char) (r.nextInt(26) + 'a');
-
-        return c;
     }
 
 }

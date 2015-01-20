@@ -11,6 +11,7 @@
     <TextView
         android:id="@+id/prevent_double_click_tv_code"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Date Formats."
+        android:text="Date Formats"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
@@ -81,7 +81,7 @@
         android:layout_alignLeft="@+id/textView3"
         android:layout_below="@+id/tvDateFormate_yyyyMMddHHmmZ"
         android:layout_marginTop="20dp"
-        android:text="Date format(yyyy-MM-dd HH:mm:ss.SSSZ);"
+        android:text="Date format(yyyy-MM-dd HH:mm:ss.SSSZ):"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView

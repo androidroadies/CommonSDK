@@ -16,10 +16,10 @@
     <ImageView
         android:id="@+id/ivDownLoadImage"
         android:layout_width="wrap_content"
-        android:layout_margin="20dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvDefaultDownLoadImageUrl"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp" />
 
     <Button
         android:id="@+id/btnDownLoadImage"
@@ -27,7 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/ivDownLoadImage"
         android:layout_centerHorizontal="true"
-        android:text="Download Image" />
+        android:text="Download Image"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/tvDefaultDownLoadImageUrl"

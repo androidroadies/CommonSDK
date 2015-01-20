@@ -5,7 +5,9 @@ package com.common.example;
  */
 
 import android.app.Activity;
+import android.bluetooth.BluetoothAdapter;
 import android.content.Context;
+import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -34,11 +36,29 @@ public class BluetoothOrWifiOnOffAct extends Activity {
 
         btnBluetoothOnOff = (Button) findViewById(R.id.btnBluetoothOnOff);
         btnWifiOnOff = (Button) findViewById(R.id.btnWifiOnOff);
+
+        BluetoothAdapter mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
+        if (mBluetoothAdapter.isEnabled()) {
+            btnBluetoothOnOff.setText("Bluetooth On");
+            isBluetooth = false;
+        } else {
+            isBluetooth = true;
+            btnBluetoothOnOff.setText("Bluetooth Off");
+        }
+
+        WifiManager wm = ((WifiManager) mContext.getSystemService(Context.WIFI_SERVICE));
+        if (wm.isWifiEnabled()) {
+            btnWifiOnOff.setText("Wifi On");
+            isWifi = false;
+        } else {
+            btnWifiOnOff.setText("Wifi Off");
+            isWifi = true;
+        }
+
         btnBluetoothOnOff.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                // TODO Auto-generated method stub
                 if (isBluetooth) {
                     Common.onBlueTooth("on");
                     btnBluetoothOnOff.setText("Bluetooth On");

@@ -1,13 +1,13 @@
 package com.common.example;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.widget.ImageView;
 
 import com.common.utils.Common;
 import com.common.utils.R;
 
-public class RoundedBitmapActivity extends ActionBarActivity {
+public class RoundedBitmapActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -19,11 +19,11 @@
         android:id="@+id/etValidation"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:singleLine="true"
-        android:inputType="textUri"
         android:layout_below="@+id/textView1"
         android:layout_marginTop="30dp"
-        android:hint="Enter Text" />
+        android:hint="Enter Text"
+        android:inputType="textUri"
+        android:singleLine="true" />
 
 
     <com.andexert.library.RippleView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -40,8 +40,8 @@
             android:layout_centerVertical="true"
             android:background="#2050aa"
             android:padding="15dp"
-            android:text="Url Validation."
-            android:textColor="@android:color/white"
-            android:textSize="25sp" />
+            android:text="Url Validation"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@android:color/white" />
     </com.andexert.library.RippleView>
 </LinearLayout>

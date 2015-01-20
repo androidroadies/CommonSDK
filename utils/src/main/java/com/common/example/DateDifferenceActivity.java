@@ -1,20 +1,20 @@
 package com.common.example;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.os.Environment;
-import android.support.v7.app.ActionBarActivity;
+import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+import android.widget.TextView;
 
 import com.common.utils.Common;
 import com.common.utils.R;
 
-public class DateDifferenceActivity extends ActionBarActivity {
+public class DateDifferenceActivity extends Activity {
 
 
-    EditText et_Url;
-    Button btnOpenUrl;
+    TextView tvDate1;
+    TextView tvDate2;
+    TextView tvDifference;
     private DateDifferenceActivity mContext;
 
     @Override
@@ -28,31 +28,38 @@ public class DateDifferenceActivity extends ActionBarActivity {
 
     private void init() {
 
-        et_Url = (EditText) findViewById(R.id.et_address);
-        btnOpenUrl = (Button) findViewById(R.id.btnOpenMap);
+        tvDate1 = (TextView) findViewById(R.id.tv_date1);
+        tvDate2 = (TextView) findViewById(R.id.tv_date2);
+        tvDifference = (TextView) findViewById(R.id.tvDifference);
 
-        btnOpenUrl.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.btn_date1).setOnClickListener(new View.OnClickListener() {
 
             @Override
             public void onClick(View v) {
-                if (Common.isNetworkAvailable(mContext)) {
-                    if (Common.isEmptyEditText(et_Url)) {
-                        boolean created = Common.createFolder(mContext, Environment.getExternalStorageDirectory().getPath(), "TestFolder");
-                        if (created)
-                            Common.showAlertDialog(mContext, getString(R.string.app_name), "Folder Created  " + Environment.getExternalStorageDirectory().getPath() + "/TestFolder", false);
-                        else
-                            Common.showAlertDialog(mContext, getString(R.string.app_name), "Folder Not Created OR Folder is already Created", false);
-                    } else {
-                        boolean created = Common.createFolder(mContext, Environment.getExternalStorageDirectory().getPath(), et_Url.getText().toString());
-                        if (created)
-                            Common.showAlertDialog(mContext, getString(R.string.app_name), "Folder Created  " + Environment.getExternalStorageDirectory().getPath() + "/" + et_Url.getText().toString(), false);
-                        else
-                            Common.showAlertDialog(mContext, getString(R.string.app_name), "Folder Not Created OR Folder is already Created", false);
-                    }
-                } else {
-                    Common.showNETWORDDisabledAlert(mContext);
-                }
+                Common.showDatePickerDialog(mContext, "dd/MM/yyyy", tvDate1);
 
+            }
+        });
+
+        findViewById(R.id.btn_date2).setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                Common.showDatePickerDialog(mContext, "dd/MM/yyyy", tvDate2);
+
+            }
+        });
+
+
+        findViewById(R.id.btn_calculate).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (TextUtils.isEmpty(tvDate1.getText().toString()) | TextUtils.isEmpty(tvDate2.getText().toString()))
+                    Common.showAlertDialog(mContext, "", "Please select both dates", true);
+                else {
+                    long diff = Common.calculateDays(Common.stringToDate(tvDate1.getText().toString(), "dd/MM/yyy"), Common.stringToDate(tvDate2.getText().toString(), "dd/MM/yyy"));
+                    tvDifference.setText("Difference is " + diff + " days");
+                }
             }
         });
     }

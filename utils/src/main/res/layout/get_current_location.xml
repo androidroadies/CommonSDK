@@ -20,7 +20,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="73dp"
-        android:text="Get Current Location" />
+        android:text="Get Current Location"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/tvLongitude"
@@ -31,7 +32,7 @@
         android:layout_toRightOf="@+id/textView3"
         android:padding="10dp"
         android:text="Longtitude"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textView2"
@@ -51,7 +52,7 @@
         android:layout_toRightOf="@+id/textView3"
         android:padding="10dp"
         android:text="Latitude"
-        android:textAppearance="?android:attr/textAppearanceSmall" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <TextView
         android:id="@+id/textView3"

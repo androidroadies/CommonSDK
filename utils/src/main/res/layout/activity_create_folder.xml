@@ -28,25 +28,25 @@
 
     <TextView
         android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
         android:layout_marginTop="20dp"
         android:padding="10dp"
         android:text="Folder Name :"
-        android:layout_below="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:layout_height="wrap_content" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/et_address"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
-        android:layout_toRightOf="@id/tv_address"
         android:layout_marginTop="20dp"
-        android:singleLine="true"
-        android:inputType="textUri"
+        android:layout_toRightOf="@id/tv_address"
         android:ems="10"
-        android:hint="Enter folder name" />
+        android:hint="Enter folder name"
+        android:inputType="textUri"
+        android:singleLine="true" />
 
 
     <Button
@@ -54,9 +54,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/et_address"
-        android:layout_margin="20dp"
         android:layout_centerHorizontal="true"
-        android:text="Go" />
+        android:layout_margin="20dp"
+        android:text="Go"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 
 </RelativeLayout>

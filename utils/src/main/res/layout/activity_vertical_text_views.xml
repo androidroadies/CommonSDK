@@ -15,8 +15,8 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:text="@string/hello_world"
-        android:textColor="@android:color/black"
-        android:textSize="22sp" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/black" />
 
     <com.common.utils.VerticalTextViewRight
         android:id="@+id/text2"
@@ -25,5 +25,5 @@
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:text="@string/hello_world"
-        android:textSize="22sp" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 </RelativeLayout>

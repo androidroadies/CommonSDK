@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
         ripple:rv_centered="false">
 
         <Button
@@ -23,9 +23,9 @@
             android:layout_height="wrap_content"
             android:background="#2050aa"
             android:padding="15dp"
-            android:textColor="@android:color/white"
-            android:textSize="25sp"
-            android:text="Capture Screen" />
+            android:text="Capture Screen"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
     </com.andexert.library.RippleView>
 
     <ScrollView
@@ -37,8 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@android:color/white"
-            android:textColor="#33b5e5"
-            android:textSize="22sp" />
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#33b5e5" />
     </ScrollView>
 
 </LinearLayout>

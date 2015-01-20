@@ -1,12 +1,12 @@
 package com.common.example;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.widget.TextView;
 
 import com.common.utils.R;
 
-public class SaveImageInPreference extends ActionBarActivity {
+public class SaveImageInPreference extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,7 +16,7 @@ public class SaveImageInPreference extends ActionBarActivity {
 
         TextView tvCode = (TextView) findViewById(R.id.save_image_in_pref_tv_code);
         tvCode.setText("\n \t SAVE BITMAP TO PREFERENCE \n" +
-              "  /**\n" +
+                "  /**\n" +
                 "     * save your bitmap in your preference\n" +
                 "     *\n" +
                 "     * @param bitmap  which you have to store in preference\n" +

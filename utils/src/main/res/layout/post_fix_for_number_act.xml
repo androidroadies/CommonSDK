@@ -20,21 +20,21 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
         android:layout_marginTop="78dp"
+        android:padding="10dp"
         android:text="Number : "
-        android:padding="10dp" />
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
         android:id="@+id/et_FixNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/tvTitle"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="78dp"
-        android:ems="10"
-        android:singleLine="true"
         android:layout_toRightOf="@id/tv_Number"
+        android:ems="10"
         android:hint="Enter Your Number"
-        android:inputType="number" />
+        android:inputType="number"
+        android:singleLine="true" />
 
 
     <TextView
@@ -54,5 +54,6 @@
         android:layout_below="@id/tvFixNumber"
         android:layout_centerHorizontal="true"
         android:layout_margin="20dp"
-        android:text="Enter" />
+        android:text="Enter"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 </RelativeLayout>

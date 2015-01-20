@@ -1,12 +1,12 @@
 package com.common.example;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.widget.TextView;
 
 import com.common.utils.R;
 
-public class DrawableToBitmapActivity extends ActionBarActivity {
+public class DrawableToBitmapActivity extends Activity {
 
     private TextView tvCode;
 

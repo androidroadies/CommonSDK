@@ -18,7 +18,8 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="48dp"
-        android:text="Music Start" />
+        android:text="Music Start"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/btnStop"
@@ -27,6 +28,7 @@
         android:layout_alignLeft="@+id/btnStart"
         android:layout_below="@+id/btnStart"
         android:enabled="false"
-        android:text="Music Stop" />
+        android:text="Music Stop"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

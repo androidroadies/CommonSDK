@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:text="Screen SleepMode on off."
+        android:text="Screen SleepMode on off"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
@@ -20,7 +20,8 @@
         android:layout_alignLeft="@+id/btnEnable"
         android:layout_below="@+id/btnEnable"
         android:layout_marginTop="48dp"
-        android:text="Screen SleepMode Disable" />
+        android:text="Screen SleepMode Disable"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <Button
         android:id="@+id/btnEnable"
@@ -30,6 +31,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:enabled="false"
-        android:text="Screen SleepMode Enable" />
+        android:text="Screen SleepMode Enable"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
 
 </RelativeLayout>

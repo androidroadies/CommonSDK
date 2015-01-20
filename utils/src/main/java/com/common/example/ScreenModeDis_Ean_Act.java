@@ -40,6 +40,7 @@ public class ScreenModeDis_Ean_Act extends Activity {
                 Common.disableSleepMode(mContext);
                 Common.showAlertDialog(mContext, getString(R.string.app_name), "Screen Sleep mode Disable.", false);
                 btnEnable.setEnabled(true);
+                btnDisable.setEnabled(false);
             }
         });
 
@@ -51,6 +52,7 @@ public class ScreenModeDis_Ean_Act extends Activity {
                 Common.enableSleepMode();
                 Common.showAlertDialog(mContext, getString(R.string.app_name), "Screen Sleep mode Enable.", false);
                 btnEnable.setEnabled(false);
+                btnDisable.setEnabled(true);
             }
         });
 
