@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <items version="2">
 
+    <item jar="F:\Workspace\CommonSDK\UtilsExample\utils\libs\signpost-commonshttp4-1.2.1.1.jar"
+        jumboMode="false" revision="21.1.1" sha1="1e6380adcb5808bfe13a934a2f35bfeed1adbc49">
+        <dex
+            dex="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\pre-dexed\debug\signpost-commonshttp4-1.2.1.1-1463570335ab3c89a2ce284e0a0ad974c24b76cd.jar" />
+    </item>
+    <item jar="F:\Workspace\CommonSDK\CommonSDKGIT\utils\libs\socialauth-4.4.jar" jumboMode="false"
+        revision="21.1.1" sha1="a867292683d6086af72c7cac181892e118058989">
+        <dex
+            dex="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\pre-dexed\debug\socialauth-4.4-2600a87ff54bb50f5872edefea0cdd0e53ec7141.jar" />
+    </item>
+    <item jar="F:\Workspace\CommonSDK\CommonSDKGIT\utils\libs\linkedin-j-android-1.0.jar"
+        jumboMode="false" revision="21.1.1" sha1="13bae5a8934c403ab39853974dd6e798d2217ae7">
+        <dex
+            dex="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\pre-dexed\debug\linkedin-j-android-1.0-85e229cc27dfb876cc281de368d860bbe8b96103.jar" />
+    </item>
+    <item
+        jar="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
+        jumboMode="false" revision="21.1.1" sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex
+            dex="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\pre-dexed\debug\classes-51d938b58cc80ca9d82f469f4f7868c997c15028.jar" />
+    </item>
+    <item
+        jar="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false" revision="21.1.1" sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex
+            dex="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-dd07b1fed38cc49cb00f31a18d5ea81e1a59e95f.jar" />
+    </item>
+    <item jar="F:\Workspace\CommonSDK\UtilsExample\utils\libs\scribe-1.3.0.jar" jumboMode="false"
+        revision="21.1.1" sha1="8a9f92023995a881e97622f82a2dd36d23dda06c">
+        <dex
+            dex="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\pre-dexed\debug\scribe-1.3.0-b8ff6aa485e5e4b3a37f2cb29c90fc5af39c79cf.jar" />
+    </item>
     <item jar="F:\Workspace\CommonSDK\UtilsExample\utils\libs\signpost-core-1.2.1.1.jar"
         jumboMode="false" revision="21.1.1" sha1="47d92007ca13efd47efad1af94d842ecb5066310">
         <dex
@@ -28,25 +60,10 @@
         <dex
             dex="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\pre-dexed\debug\classes-519db6afd91f95a6e68e838342fa7d87844a249b.jar" />
     </item>
-    <item jar="F:\Workspace\CommonSDK\UtilsExample\utils\libs\signpost-commonshttp4-1.2.1.1.jar"
-        jumboMode="false" revision="21.1.1" sha1="1e6380adcb5808bfe13a934a2f35bfeed1adbc49">
-        <dex
-            dex="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\pre-dexed\debug\signpost-commonshttp4-1.2.1.1-1463570335ab3c89a2ce284e0a0ad974c24b76cd.jar" />
-    </item>
-    <item jar="F:\Workspace\CommonSDK\CommonSDKGIT\utils\libs\socialauth-4.4.jar" jumboMode="false"
-        revision="21.1.1" sha1="a867292683d6086af72c7cac181892e118058989">
-        <dex
-            dex="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\pre-dexed\debug\socialauth-4.4-2600a87ff54bb50f5872edefea0cdd0e53ec7141.jar" />
-    </item>
     <item jar="F:\Workspace\CommonSDK\CommonSDKGIT\utils\libs\scribe-1.3.0.jar" jumboMode="false"
         revision="21.1.1" sha1="8a9f92023995a881e97622f82a2dd36d23dda06c">
         <dex
             dex="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\pre-dexed\debug\scribe-1.3.0-e38da9883665f4d1143a719d735bf0358f91a583.jar" />
-    </item>
-    <item jar="F:\Workspace\CommonSDK\CommonSDKGIT\utils\libs\linkedin-j-android-1.0.jar"
-        jumboMode="false" revision="21.1.1" sha1="13bae5a8934c403ab39853974dd6e798d2217ae7">
-        <dex
-            dex="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\pre-dexed\debug\linkedin-j-android-1.0-85e229cc27dfb876cc281de368d860bbe8b96103.jar" />
     </item>
     <item
         jar="C:\Users\Sanjay\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
@@ -55,22 +72,10 @@
             dex="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-d18b4cbb96c960a5f42e3215f41a3d115b44925e.jar" />
     </item>
     <item
-        jar="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\exploded-aar\com.android.support\appcompat-v7\21.0.3\classes.jar"
-        jumboMode="false" revision="21.1.1" sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
-        <dex
-            dex="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\pre-dexed\debug\classes-51d938b58cc80ca9d82f469f4f7868c997c15028.jar" />
-    </item>
-    <item
         jar="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
         jumboMode="false" revision="21.1.1" sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
         <dex
             dex="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-654569701074178841a8ab5422c6895029b09e45.jar" />
-    </item>
-    <item
-        jar="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
-        jumboMode="false" revision="21.1.1" sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
-        <dex
-            dex="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-dd07b1fed38cc49cb00f31a18d5ea81e1a59e95f.jar" />
     </item>
     <item jar="F:\Workspace\CommonSDK\CommonSDKGIT\utils\libs\signpost-core-1.2.1.1.jar"
         jumboMode="false" revision="21.1.1" sha1="47d92007ca13efd47efad1af94d842ecb5066310">
@@ -99,11 +104,6 @@
         jumboMode="false" revision="21.1.1" sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
         <dex
             dex="F:\Workspace\CommonSDK\CommonSDKGIT\utils\build\intermediates\pre-dexed\debug\classes-0ea7919d3dd73a36bc4c5e962dec43eaed705868.jar" />
-    </item>
-    <item jar="F:\Workspace\CommonSDK\UtilsExample\utils\libs\scribe-1.3.0.jar" jumboMode="false"
-        revision="21.1.1" sha1="8a9f92023995a881e97622f82a2dd36d23dda06c">
-        <dex
-            dex="F:\Workspace\CommonSDK\UtilsExample\utils\build\intermediates\pre-dexed\debug\scribe-1.3.0-b8ff6aa485e5e4b3a37f2cb29c90fc5af39c79cf.jar" />
     </item>
 
 </items>

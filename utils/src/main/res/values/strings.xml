@@ -22,5 +22,6 @@
     <string name="title_activity_choose_profile">ChooseProfileActivity</string>
     <string name="title_activity_volume">VolumeActivity</string>
     <string name="title_activity_file_count">FileCountActivity</string>
+    <string name="title_activity_color_picker">ColorPickerActivity</string>
 
 </resources>

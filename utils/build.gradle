@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:20.0.0'
+    compile 'com.android.support:support-v4:21.0.0'
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile files('libs/socialauth-4.4.jar')
     compile files('libs/linkedin-j-android-1.0.jar')

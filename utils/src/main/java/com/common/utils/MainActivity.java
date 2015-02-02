@@ -19,6 +19,7 @@ import com.common.example.BackGroundMusicStartStopAct;
 import com.common.example.BluetoothOrWifiOnOffAct;
 import com.common.example.BlurEffectActivity;
 import com.common.example.ChooseProfileActivity;
+import com.common.example.ColorPickerActivity;
 import com.common.example.CreateFolderActivity;
 import com.common.example.DateDifferenceActivity;
 import com.common.example.DateFormateAct;
@@ -108,7 +109,9 @@ public class MainActivity extends Activity {
                 "Pick/Capture Image/Video and preview",/* 42 */
                 "Url Validation & Ripple Effect",/* 43 */
                 "Contacts with EmailId & ScreenShot",/* 44 */
-                "Social Integration"/* 45 */
+                "Social Integration",/* 45 */
+                "Pick Color"/* 46 */
+
         };
 
         sdkFunctionalityList = (ListView) findViewById(R.id.Md_list_company);
@@ -293,6 +296,9 @@ public class MainActivity extends Activity {
                 break;
             case 45:
                 intent = new Intent(mContext, com.common.example.CommonActivity.class);
+                break;
+            case 46:
+                intent = new Intent(mContext, ColorPickerActivity.class);
                 break;
         }
         if (intent != null)
