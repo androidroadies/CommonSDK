@@ -105,12 +105,12 @@ public class Common {
     public static final String LOGIN_EMAIL = "LOGIN_EMAIL";
     public static final int MEDIA_TYPE_IMAGE = 1;
     public static final int MEDIA_TYPE_VIDEO = 2;
+    public static final String IMAGE_DIRECTORY_NAME = "CommonDirectory";
     //	public static Facebook facebook;
     static final String TOKEN = "access_token";
     static final String EXPIRES = "expires_in";
     static final String[] PERMISSIONS = new String[]{"publish_stream"};
     private static final long MIN_CLICK_INTERVAL = 2 * 1000;
-    private static final String IMAGE_DIRECTORY_NAME = "CommonDirectory";
     public static String prefranceDate, prefrenceTime;
     /**
      * SharedPreferences
@@ -1872,6 +1872,14 @@ public class Common {
         }
     }
 
+    public static void getRemoteFileSize(Context context, String url) {
+        new DownloadFile(context, url, "", false).execute();
+    }
+
+    public static void downloadRemoteFile(Context context, String url, String filename) {
+        new DownloadFile(context, url, filename, true).execute();
+    }
+
     // -------------------------------------
     private String getRealPathFromURI(Uri targetUri, Context mContext) {
         // TODO Auto-generated method stub
@@ -1927,3 +1935,5 @@ public class Common {
         alert.show();
     }
 }
+
+

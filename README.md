@@ -64,5 +64,7 @@ This Project includes following common features.
     Get all contacts that have email address.
     Get bitmap of view (ScreenShot).
     Pick Color from ImageView.
+    Get File Size.
+    Download File.
 
 

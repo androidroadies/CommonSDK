@@ -23,5 +23,6 @@
     <string name="title_activity_volume">VolumeActivity</string>
     <string name="title_activity_file_count">FileCountActivity</string>
     <string name="title_activity_color_picker">ColorPickerActivity</string>
+    <string name="title_activity_download">DownloadActivity</string>
 
 </resources>

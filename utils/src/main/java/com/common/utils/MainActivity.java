@@ -23,6 +23,7 @@ import com.common.example.ColorPickerActivity;
 import com.common.example.CreateFolderActivity;
 import com.common.example.DateDifferenceActivity;
 import com.common.example.DateFormateAct;
+import com.common.example.DownloadActivity;
 import com.common.example.DownloadImageFromUrlAct;
 import com.common.example.DrawableToBitmapActivity;
 import com.common.example.EmailContactsScreenShotActivity;
@@ -110,7 +111,8 @@ public class MainActivity extends Activity {
                 "Url Validation & Ripple Effect",/* 43 */
                 "Contacts with EmailId & ScreenShot",/* 44 */
                 "Social Integration",/* 45 */
-                "Pick Color"/* 46 */
+                "Pick Color",/* 46 */
+                "Remote File Size or Download File"/* 46 */
 
         };
 
@@ -299,6 +301,9 @@ public class MainActivity extends Activity {
                 break;
             case 46:
                 intent = new Intent(mContext, ColorPickerActivity.class);
+                break;
+            case 47:
+                intent = new Intent(mContext, DownloadActivity.class);
                 break;
         }
         if (intent != null)
